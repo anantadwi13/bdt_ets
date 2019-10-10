@@ -1,0 +1,4 @@
+
+loose-group_replication_group_name = 123
+loose-group_replication_ip_whitelist = "192.168.33.11, 192.168.33.12, 192.168.33.13"
+loose-group_replication_group_seeds = "192.168.33.11:33061, 192.168.33.12:33061, 192.168.33.13:33061"

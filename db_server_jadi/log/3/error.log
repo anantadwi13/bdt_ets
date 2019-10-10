@@ -1,0 +1,245 @@
+2019-10-10T12:24:32.949329Z mysqld_safe Logging to '/var/log/mysql/error.log'.
+2019-10-10T12:24:32.983896Z mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2019-10-10T12:24:33.219103Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-10-10T12:24:33.221000Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.23-log) starting as process 579 ...
+2019-10-10T12:24:33.253523Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-10-10T12:24:33.253978Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-10-10T12:24:33.254474Z 0 [Note] InnoDB: Uses event mutexes
+2019-10-10T12:24:33.255346Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-10-10T12:24:33.258847Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-10T12:24:33.259492Z 0 [Note] InnoDB: Using Linux native AIO
+2019-10-10T12:24:33.260214Z 0 [Note] InnoDB: Number of pools: 1
+2019-10-10T12:24:33.260762Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-10-10T12:24:33.263959Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-10T12:24:33.278797Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-10T12:24:33.287029Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-10-10T12:24:33.298970Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-10T12:24:33.333373Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-10T12:24:33.334283Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-10T12:24:33.386230Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-10-10T12:24:33.388010Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-10-10T12:24:33.388504Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-10-10T12:24:33.391411Z 0 [Note] InnoDB: 5.7.23 started; log sequence number 2588963
+2019-10-10T12:24:33.392632Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-10-10T12:24:33.396713Z 0 [Warning] unknown variable 'loose-group_replication_bootstrap_group=OFF'
+2019-10-10T12:24:33.397115Z 0 [Warning] unknown variable 'loose-group_replication_start_on_boot=ON'
+2019-10-10T12:24:33.397564Z 0 [Warning] unknown variable 'loose-group_replication_ssl_mode=REQUIRED'
+2019-10-10T12:24:33.397800Z 0 [Warning] unknown variable 'loose-group_replication_recovery_use_ssl=1'
+2019-10-10T12:24:33.397990Z 0 [Warning] unknown variable 'loose-group_replication_group_name=0df394f6-d3cd-4cb3-bb21-a861130cfe01'
+2019-10-10T12:24:33.398171Z 0 [Warning] unknown variable 'loose-group_replication_ip_whitelist=192.168.17.29, 192.168.17.30, 192.168.17.31'
+2019-10-10T12:24:33.398375Z 0 [Warning] unknown variable 'loose-group_replication_group_seeds=192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061'
+2019-10-10T12:24:33.398706Z 0 [Warning] unknown variable 'loose-group_replication_single_primary_mode=OFF'
+2019-10-10T12:24:33.402543Z 0 [Warning] unknown variable 'loose-group_replication_enforce_update_everywhere_checks=ON'
+2019-10-10T12:24:33.403153Z 0 [Warning] unknown variable 'loose-group_replication_local_address=192.168.17.31:33061'
+2019-10-10T12:24:33.392856Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-10-10T12:24:33.410544Z 0 [Note] InnoDB: Buffer pool(s) load completed at 191010 12:24:33
+2019-10-10T12:24:33.456774Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-10-10T12:24:33.458268Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-10-10T12:24:33.460379Z 0 [Note] Server hostname (bind-address): '192.168.17.31'; port: 3306
+2019-10-10T12:24:33.461320Z 0 [Note]   - '192.168.17.31' resolves to '192.168.17.31';
+2019-10-10T12:24:33.461676Z 0 [Note] Server socket created on IP: '192.168.17.31'.
+2019-10-10T12:24:33.484730Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-10-10T12:24:33.485520Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.23-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2019-10-10T12:24:33.637953Z 2 [Warning] Neither --relay-log nor --relay-log-index were used; so replication may break when this MySQL server acts as a slave and has his hostname changed!! Please use '--relay-log=c40e5070a86f-relay-bin' to avoid this problem.
+2019-10-10T12:24:33.728925Z 2 [Note] 'CHANGE MASTER TO FOR CHANNEL 'group_replication_recovery' executed'. Previous state master_host='', master_port= 3306, master_log_file='', master_log_pos= 4, master_bind=''. New state master_host='', master_port= 3306, master_log_file='', master_log_pos= 4, master_bind=''.
+2019-10-10T12:24:33.840139Z 2 [Note] Plugin group_replication reported: 'Group communication SSL configuration: group_replication_ssl_mode: "REQUIRED"; server_key_file: "server-key.pem"; server_cert_file: "server-cert.pem"; client_key_file: "server-key.pem"; client_cert_file: "server-cert.pem"; ca_file: "ca.pem"; ca_path: ""; cipher: ""; tls_version: "TLSv1,TLSv1.1"; crl_file: ""; crl_path: ""'
+2019-10-10T12:24:33.840546Z 2 [Warning] Plugin group_replication reported: '[GCS] Automatically adding IPv4 localhost address to the whitelist. It is mandatory that it is added.'
+2019-10-10T12:24:33.842936Z 2 [Note] Plugin group_replication reported: 'Initialized group communication with configuration: group_replication_group_name: "0df394f6-d3cd-4cb3-bb21-a861130cfe01"; group_replication_local_address: "192.168.17.31:33061"; group_replication_group_seeds: "192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"; group_replication_bootstrap_group: false; group_replication_poll_spin_loops: 0; group_replication_compression_threshold: 1000000; group_replication_ip_whitelist: "192.168.17.29, 192.168.17.30, 192.168.17.31"'
+2019-10-10T12:24:33.843012Z 2 [Note] Plugin group_replication reported: '[GCS] Configured number of attempts to join: 0'
+2019-10-10T12:24:33.843035Z 2 [Note] Plugin group_replication reported: '[GCS] Configured time between attempts to join: 5 seconds'
+2019-10-10T12:24:33.843065Z 2 [Note] Plugin group_replication reported: 'Member configuration: member_id: 31; member_uuid: "7f2e3099-eb43-11e9-9259-0242ac110004"; single-primary mode: "false"; group_replication_auto_increment_increment: 7; '
+2019-10-10T12:24:34.012571Z 4 [Note] 'CHANGE MASTER TO FOR CHANNEL 'group_replication_applier' executed'. Previous state master_host='', master_port= 3306, master_log_file='', master_log_pos= 4, master_bind=''. New state master_host='<NULL>', master_port= 0, master_log_file='', master_log_pos= 4, master_bind=''.
+2019-10-10T12:24:34.108425Z 2 [Note] Plugin group_replication reported: 'Group Replication applier module successfully initialized!'
+2019-10-10T12:24:34.108489Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is set to 7'
+2019-10-10T12:24:34.108509Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is set to 31'
+2019-10-10T12:24:34.108428Z 7 [Note] Slave SQL thread for channel 'group_replication_applier' initialized, starting replication in log 'FIRST' at position 0, relay log './c40e5070a86f-relay-bin-group_replication_applier.000001' position: 4
+2019-10-10T12:24:34.129330Z 0 [Note] Plugin group_replication reported: 'XCom protocol version: 3'
+2019-10-10T12:24:34.129357Z 0 [Note] Plugin group_replication reported: 'XCom initialized and ready to accept incoming connections on port 33061'
+2019-10-10T12:24:34.293469Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.293588Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.293642Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.293689Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.293742Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.293787Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.293833Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.293878Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294017Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.294077Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294123Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.294167Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294211Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.294255Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294300Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.294346Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294391Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.294437Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294481Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:24:34.294525Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:24:34.294533Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error connecting to all peers. Member join failed. Local port: 33061'
+2019-10-10T12:24:34.294803Z 0 [Warning] Plugin group_replication reported: 'read failed'
+2019-10-10T12:24:34.306018Z 0 [ERROR] Plugin group_replication reported: '[GCS] The member was unable to join the group. Local port: 33061'
+2019-10-10T12:25:34.108610Z 2 [ERROR] Plugin group_replication reported: 'Timeout on wait for view after joining group'
+2019-10-10T12:25:34.109373Z 2 [Note] Plugin group_replication reported: 'Requesting to leave the group despite of not being a member'
+2019-10-10T12:25:34.110071Z 2 [ERROR] Plugin group_replication reported: '[GCS] The member is leaving a group without being on one.'
+2019-10-10T12:25:34.110882Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is reset to 1'
+2019-10-10T12:25:34.111406Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is reset to 1'
+2019-10-10T12:25:34.112197Z 7 [Note] Error reading relay log event for channel 'group_replication_applier': slave SQL thread was killed
+2019-10-10T12:25:34.112597Z 7 [Note] Slave SQL thread for channel 'group_replication_applier' exiting, replication stopped in log 'FIRST' at position 0
+2019-10-10T12:25:34.124319Z 4 [Note] Plugin group_replication reported: 'The group replication applier thread was killed'
+2019-10-10T12:25:35.127559Z 2 [ERROR] Plugin group_replication reported: 'Unable to start Group Replication on boot'
+2019-10-10T12:25:35.142682Z 2 [Note] Plugin group_replication reported: 'Group communication SSL configuration: group_replication_ssl_mode: "REQUIRED"; server_key_file: "server-key.pem"; server_cert_file: "server-cert.pem"; client_key_file: "server-key.pem"; client_cert_file: "server-cert.pem"; ca_file: "ca.pem"; ca_path: ""; cipher: ""; tls_version: "TLSv1,TLSv1.1"; crl_file: ""; crl_path: ""'
+2019-10-10T12:25:35.143306Z 2 [Warning] Plugin group_replication reported: '[GCS] Automatically adding IPv4 localhost address to the whitelist. It is mandatory that it is added.'
+2019-10-10T12:25:35.144101Z 2 [Note] Plugin group_replication reported: 'Initialized group communication with configuration: group_replication_group_name: "0df394f6-d3cd-4cb3-bb21-a861130cfe01"; group_replication_local_address: "192.168.17.31:33061"; group_replication_group_seeds: "192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"; group_replication_bootstrap_group: false; group_replication_poll_spin_loops: 0; group_replication_compression_threshold: 1000000; group_replication_ip_whitelist: "192.168.17.29, 192.168.17.30, 192.168.17.31"'
+2019-10-10T12:25:35.144529Z 2 [Note] Plugin group_replication reported: '[GCS] Configured number of attempts to join: 0'
+2019-10-10T12:25:35.144942Z 2 [Note] Plugin group_replication reported: '[GCS] Configured time between attempts to join: 5 seconds'
+2019-10-10T12:25:35.145288Z 2 [Note] Plugin group_replication reported: 'Member configuration: member_id: 31; member_uuid: "7f2e3099-eb43-11e9-9259-0242ac110004"; single-primary mode: "false"; group_replication_auto_increment_increment: 7; '
+2019-10-10T12:25:35.146002Z 9 [Note] 'CHANGE MASTER TO FOR CHANNEL 'group_replication_applier' executed'. Previous state master_host='<NULL>', master_port= 0, master_log_file='', master_log_pos= 4, master_bind=''. New state master_host='<NULL>', master_port= 0, master_log_file='', master_log_pos= 4, master_bind=''.
+2019-10-10T12:25:35.198278Z 2 [Note] Plugin group_replication reported: 'Group Replication applier module successfully initialized!'
+2019-10-10T12:25:35.198839Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is set to 7'
+2019-10-10T12:25:35.199259Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is set to 31'
+2019-10-10T12:25:35.198278Z 12 [Note] Slave SQL thread for channel 'group_replication_applier' initialized, starting replication in log 'FIRST' at position 0, relay log './c40e5070a86f-relay-bin-group_replication_applier.000001' position: 4
+2019-10-10T12:25:35.199956Z 0 [Note] Plugin group_replication reported: 'XCom protocol version: 3'
+2019-10-10T12:25:35.200927Z 0 [Note] Plugin group_replication reported: 'XCom initialized and ready to accept incoming connections on port 33061'
+2019-10-10T12:25:35.282928Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.283593Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.284135Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.284716Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.285277Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.285804Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.286301Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.286790Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.287209Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.287682Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.288102Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.288542Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.288963Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.289428Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.290040Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.290578Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.291023Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.291454Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.291853Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:25:35.292248Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:25:35.292598Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error connecting to all peers. Member join failed. Local port: 33061'
+2019-10-10T12:25:35.293186Z 0 [Warning] Plugin group_replication reported: 'read failed'
+2019-10-10T12:25:35.311218Z 0 [ERROR] Plugin group_replication reported: '[GCS] The member was unable to join the group. Local port: 33061'
+2019-10-10T12:26:35.199870Z 2 [ERROR] Plugin group_replication reported: 'Timeout on wait for view after joining group'
+2019-10-10T12:26:35.200260Z 2 [Note] Plugin group_replication reported: 'Requesting to leave the group despite of not being a member'
+2019-10-10T12:26:35.205651Z 2 [ERROR] Plugin group_replication reported: '[GCS] The member is leaving a group without being on one.'
+2019-10-10T12:26:35.207944Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is reset to 1'
+2019-10-10T12:26:35.208680Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is reset to 1'
+2019-10-10T12:26:35.209509Z 12 [Note] Error reading relay log event for channel 'group_replication_applier': slave SQL thread was killed
+2019-10-10T12:26:35.210204Z 12 [Note] Slave SQL thread for channel 'group_replication_applier' exiting, replication stopped in log 'FIRST' at position 0
+2019-10-10T12:26:35.214987Z 9 [Note] Plugin group_replication reported: 'The group replication applier thread was killed'
+2019-10-10T12:35:15.002745Z mysqld_safe Logging to '/var/log/mysql/error.log'.
+2019-10-10T12:35:15.024635Z mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2019-10-10T12:35:15.245897Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-10-10T12:35:15.247564Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.23-log) starting as process 580 ...
+2019-10-10T12:35:15.272144Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-10-10T12:35:15.272542Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-10-10T12:35:15.272783Z 0 [Note] InnoDB: Uses event mutexes
+2019-10-10T12:35:15.273000Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-10-10T12:35:15.273202Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2019-10-10T12:35:15.273432Z 0 [Note] InnoDB: Using Linux native AIO
+2019-10-10T12:35:15.273695Z 0 [Note] InnoDB: Number of pools: 1
+2019-10-10T12:35:15.273803Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-10-10T12:35:15.275797Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-10-10T12:35:15.297311Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-10-10T12:35:15.299684Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-10-10T12:35:15.314371Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-10-10T12:35:15.335617Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-10-10T12:35:15.335692Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-10-10T12:35:15.371433Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-10-10T12:35:15.372332Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-10-10T12:35:15.372345Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-10-10T12:35:15.373156Z 0 [Note] InnoDB: 5.7.23 started; log sequence number 2588963
+2019-10-10T12:35:15.373404Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-10-10T12:35:15.373639Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-10-10T12:35:15.378096Z 0 [Warning] unknown variable 'loose-group_replication_bootstrap_group=OFF'
+2019-10-10T12:35:15.378225Z 0 [Warning] unknown variable 'loose-group_replication_start_on_boot=ON'
+2019-10-10T12:35:15.378266Z 0 [Warning] unknown variable 'loose-group_replication_ssl_mode=REQUIRED'
+2019-10-10T12:35:15.378283Z 0 [Warning] unknown variable 'loose-group_replication_recovery_use_ssl=1'
+2019-10-10T12:35:15.378307Z 0 [Warning] unknown variable 'loose-group_replication_group_name=0df394f6-d3cd-4cb3-bb21-a861130cfe01'
+2019-10-10T12:35:15.378333Z 0 [Warning] unknown variable 'loose-group_replication_ip_whitelist=192.168.17.29, 192.168.17.30, 192.168.17.31'
+2019-10-10T12:35:15.378357Z 0 [Warning] unknown variable 'loose-group_replication_group_seeds=192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061'
+2019-10-10T12:35:15.378373Z 0 [Warning] unknown variable 'loose-group_replication_single_primary_mode=OFF'
+2019-10-10T12:35:15.378392Z 0 [Warning] unknown variable 'loose-group_replication_enforce_update_everywhere_checks=ON'
+2019-10-10T12:35:15.378404Z 0 [Warning] unknown variable 'loose-group_replication_local_address=192.168.17.31:33061'
+2019-10-10T12:35:15.382711Z 0 [Note] InnoDB: Buffer pool(s) load completed at 191010 12:35:15
+2019-10-10T12:35:15.440967Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-10-10T12:35:15.441235Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-10-10T12:35:15.442631Z 0 [Note] Server hostname (bind-address): '192.168.17.31'; port: 3306
+2019-10-10T12:35:15.442648Z 0 [Note]   - '192.168.17.31' resolves to '192.168.17.31';
+2019-10-10T12:35:15.442668Z 0 [Note] Server socket created on IP: '192.168.17.31'.
+2019-10-10T12:35:15.466101Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-10-10T12:35:15.466364Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.23-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2019-10-10T12:35:15.809689Z 2 [Warning] Neither --relay-log nor --relay-log-index were used; so replication may break when this MySQL server acts as a slave and has his hostname changed!! Please use '--relay-log=19d6014939d9-relay-bin' to avoid this problem.
+2019-10-10T12:35:15.855374Z 2 [Note] 'CHANGE MASTER TO FOR CHANNEL 'group_replication_recovery' executed'. Previous state master_host='', master_port= 3306, master_log_file='', master_log_pos= 4, master_bind=''. New state master_host='', master_port= 3306, master_log_file='', master_log_pos= 4, master_bind=''.
+2019-10-10T12:35:15.901255Z 2 [Note] Plugin group_replication reported: 'Group communication SSL configuration: group_replication_ssl_mode: "REQUIRED"; server_key_file: "server-key.pem"; server_cert_file: "server-cert.pem"; client_key_file: "server-key.pem"; client_cert_file: "server-cert.pem"; ca_file: "ca.pem"; ca_path: ""; cipher: ""; tls_version: "TLSv1,TLSv1.1"; crl_file: ""; crl_path: ""'
+2019-10-10T12:35:15.901423Z 2 [Warning] Plugin group_replication reported: '[GCS] Automatically adding IPv4 localhost address to the whitelist. It is mandatory that it is added.'
+2019-10-10T12:35:15.901770Z 2 [Note] Plugin group_replication reported: 'Initialized group communication with configuration: group_replication_group_name: "0df394f6-d3cd-4cb3-bb21-a861130cfe01"; group_replication_local_address: "192.168.17.31:33061"; group_replication_group_seeds: "192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"; group_replication_bootstrap_group: false; group_replication_poll_spin_loops: 0; group_replication_compression_threshold: 1000000; group_replication_ip_whitelist: "192.168.17.29, 192.168.17.30, 192.168.17.31"'
+2019-10-10T12:35:15.901795Z 2 [Note] Plugin group_replication reported: '[GCS] Configured number of attempts to join: 0'
+2019-10-10T12:35:15.901800Z 2 [Note] Plugin group_replication reported: '[GCS] Configured time between attempts to join: 5 seconds'
+2019-10-10T12:35:15.901811Z 2 [Note] Plugin group_replication reported: 'Member configuration: member_id: 3; member_uuid: "580181db-eb5a-11e9-98b5-0242ac110003"; single-primary mode: "false"; group_replication_auto_increment_increment: 7; '
+2019-10-10T12:35:15.954451Z 4 [Note] 'CHANGE MASTER TO FOR CHANNEL 'group_replication_applier' executed'. Previous state master_host='', master_port= 3306, master_log_file='', master_log_pos= 4, master_bind=''. New state master_host='<NULL>', master_port= 0, master_log_file='', master_log_pos= 4, master_bind=''.
+2019-10-10T12:35:16.038006Z 7 [Note] Slave SQL thread for channel 'group_replication_applier' initialized, starting replication in log 'FIRST' at position 0, relay log './19d6014939d9-relay-bin-group_replication_applier.000001' position: 4
+2019-10-10T12:35:16.038010Z 2 [Note] Plugin group_replication reported: 'Group Replication applier module successfully initialized!'
+2019-10-10T12:35:16.038038Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is set to 7'
+2019-10-10T12:35:16.038042Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is set to 3'
+2019-10-10T12:35:16.057559Z 0 [Note] Plugin group_replication reported: 'XCom protocol version: 3'
+2019-10-10T12:35:16.057580Z 0 [Note] Plugin group_replication reported: 'XCom initialized and ready to accept incoming connections on port 33061'
+2019-10-10T12:35:16.186457Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.186546Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.186603Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.186653Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.186701Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.186831Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.186887Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.186933Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.186979Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.187029Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.187075Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.187120Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.187165Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.187211Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.187256Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.187299Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.187344Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.187388Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.187432Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.29:33061 on local port: 33061.'
+2019-10-10T12:35:16.187476Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error on opening a connection to 192.168.17.30:33061 on local port: 33061.'
+2019-10-10T12:35:16.187483Z 0 [ERROR] Plugin group_replication reported: '[GCS] Error connecting to all peers. Member join failed. Local port: 33061'
+2019-10-10T12:35:16.187750Z 0 [Warning] Plugin group_replication reported: 'read failed'
+2019-10-10T12:35:16.197822Z 0 [ERROR] Plugin group_replication reported: '[GCS] The member was unable to join the group. Local port: 33061'
+2019-10-10T12:36:16.038310Z 2 [ERROR] Plugin group_replication reported: 'Timeout on wait for view after joining group'
+2019-10-10T12:36:16.038341Z 2 [Note] Plugin group_replication reported: 'Requesting to leave the group despite of not being a member'
+2019-10-10T12:36:16.038355Z 2 [ERROR] Plugin group_replication reported: '[GCS] The member is leaving a group without being on one.'
+2019-10-10T12:36:16.038566Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is reset to 1'
+2019-10-10T12:36:16.038585Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is reset to 1'
+2019-10-10T12:36:16.038953Z 7 [Note] Error reading relay log event for channel 'group_replication_applier': slave SQL thread was killed
+2019-10-10T12:36:16.038966Z 7 [Note] Slave SQL thread for channel 'group_replication_applier' exiting, replication stopped in log 'FIRST' at position 0
+2019-10-10T12:36:16.047591Z 4 [Note] Plugin group_replication reported: 'The group replication applier thread was killed'
+2019-10-10T12:36:17.048190Z 2 [ERROR] Plugin group_replication reported: 'Unable to start Group Replication on boot'
+2019-10-10T12:36:17.058133Z 2 [Note] Plugin group_replication reported: 'Group communication SSL configuration: group_replication_ssl_mode: "REQUIRED"; server_key_file: "server-key.pem"; server_cert_file: "server-cert.pem"; client_key_file: "server-key.pem"; client_cert_file: "server-cert.pem"; ca_file: "ca.pem"; ca_path: ""; cipher: ""; tls_version: "TLSv1,TLSv1.1"; crl_file: ""; crl_path: ""'
+2019-10-10T12:36:17.058277Z 2 [Warning] Plugin group_replication reported: '[GCS] Automatically adding IPv4 localhost address to the whitelist. It is mandatory that it is added.'
+2019-10-10T12:36:17.058666Z 2 [Note] Plugin group_replication reported: 'Initialized group communication with configuration: group_replication_group_name: "0df394f6-d3cd-4cb3-bb21-a861130cfe01"; group_replication_local_address: "192.168.17.31:33061"; group_replication_group_seeds: "192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"; group_replication_bootstrap_group: false; group_replication_poll_spin_loops: 0; group_replication_compression_threshold: 1000000; group_replication_ip_whitelist: "192.168.17.29, 192.168.17.30, 192.168.17.31"'
+2019-10-10T12:36:17.058708Z 2 [Note] Plugin group_replication reported: '[GCS] Configured number of attempts to join: 0'
+2019-10-10T12:36:17.058718Z 2 [Note] Plugin group_replication reported: '[GCS] Configured time between attempts to join: 5 seconds'
+2019-10-10T12:36:17.058743Z 2 [Note] Plugin group_replication reported: 'Member configuration: member_id: 3; member_uuid: "580181db-eb5a-11e9-98b5-0242ac110003"; single-primary mode: "false"; group_replication_auto_increment_increment: 7; '
+2019-10-10T12:36:17.059063Z 9 [Note] 'CHANGE MASTER TO FOR CHANNEL 'group_replication_applier' executed'. Previous state master_host='<NULL>', master_port= 0, master_log_file='', master_log_pos= 4, master_bind=''. New state master_host='<NULL>', master_port= 0, master_log_file='', master_log_pos= 4, master_bind=''.
+2019-10-10T12:36:17.178531Z 2 [Note] Plugin group_replication reported: 'Group Replication applier module successfully initialized!'
+2019-10-10T12:36:17.178558Z 12 [Note] Slave SQL thread for channel 'group_replication_applier' initialized, starting replication in log 'FIRST' at position 0, relay log './19d6014939d9-relay-bin-group_replication_applier.000001' position: 4
+2019-10-10T12:36:17.178559Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is set to 7'
+2019-10-10T12:36:17.178580Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is set to 3'
+2019-10-10T12:36:17.179195Z 0 [Note] Plugin group_replication reported: 'XCom protocol version: 3'
+2019-10-10T12:36:17.179209Z 0 [Note] Plugin group_replication reported: 'XCom initialized and ready to accept incoming connections on port 33061'
+2019-10-10T12:36:24.207588Z 0 [ERROR] Plugin group_replication reported: 'There is already a member with server_uuid 580181db-eb5a-11e9-98b5-0242ac110003. The member will now exit the group.'
+2019-10-10T12:36:24.207644Z 2 [Note] Plugin group_replication reported: 'Going to wait for view modification'
+2019-10-10T12:36:27.725073Z 0 [Note] Plugin group_replication reported: 'Group membership changed: This member has left the group.'
+2019-10-10T12:36:32.725434Z 2 [Note] Plugin group_replication reported: 'auto_increment_increment is reset to 1'
+2019-10-10T12:36:32.725451Z 2 [Note] Plugin group_replication reported: 'auto_increment_offset is reset to 1'
+2019-10-10T12:36:32.725615Z 12 [Note] Error reading relay log event for channel 'group_replication_applier': slave SQL thread was killed
+2019-10-10T12:36:32.725634Z 12 [Note] Slave SQL thread for channel 'group_replication_applier' exiting, replication stopped in log 'FIRST' at position 0
+2019-10-10T12:36:32.734990Z 9 [Note] Plugin group_replication reported: 'The group replication applier thread was killed'
