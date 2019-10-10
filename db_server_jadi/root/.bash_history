@@ -60,3 +60,34 @@ htop
 service mysql restart
 mysql -u root -padmin
 exit
+mysql -u root -padmin
+mysql -u root -padmin
+mysql -u root -padmin
+mysql -u root -padmin
+exit
+mysql -u root -padmin
+service mysql restart
+nano /etc/mysql/my.cnf
+service mysql restart
+mysql -u root -padmin
+netstat -tulpn
+exit
+htop
+mysql -u root -padmin
+exit
+mysql -u root -padmin
+ls /var/lib/mysql
+touch /var/lib/mysql/initialized
+if  [ -f "/var/lib/mysql/initialized" ]; then echo 'ok'; fi
+if  [ -f "/var/lib/mysql/initializede" ]; then echo 'ok'; fi
+exit
+if  [ ! -f "/var/lib/mysql/initializede" ]; then echo 'ok'; fi
+exit
+mysql -u root -padmin
+exit
+mysql -u root -padmin
+exit
+mysql -u root -padmin
+exit
+mysql -u root -padmin
+exit

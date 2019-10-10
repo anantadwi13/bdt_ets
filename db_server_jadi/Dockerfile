@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.04
 
 RUN apt update &&\
     apt upgrade -y
@@ -11,7 +11,6 @@ COPY ./script/sources.list /etc/apt/sources.list
 
 RUN /bin/bash /tmp/script.sh
 
-COPY ./script/my.cnf /etc/mysql/my.cnf
 #COPY ./script/startup.sh /root/startup.sh
 
 #CMD /bin/bash -c "/bin/bash /root/startup.sh; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; mysqld_safe"

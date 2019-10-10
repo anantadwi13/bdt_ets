@@ -5,29 +5,29 @@ services:
     build: .
     environment: 
       - SERVER_ID=1
-      - SERVER_IP=192.168.17.29
+      - SERVER_IP=192.168.17.31
       - SERVER_REPLICATION_PORT=33061
       - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
-      - IP_WHITELIST="192.168.17.29, 192.168.17.30, 192.168.17.31"
-      - GROUP_SEEDS="192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"
+      - IP_WHITELIST="192.168.17.31, 192.168.17.32, 192.168.17.33"
+      - GROUP_SEEDS="192.168.17.31:33061, 192.168.17.32:33061, 192.168.17.33:33061"
     volumes: 
       - db_server1:/var/lib/mysql
       - ./log/1:/var/log/mysql
       - ./root:/root
     networks: 
       bdt_network:
-        ipv4_address: 192.168.17.29
-    command: /bin/bash -c "/bin/bash /root/startup.sh; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; tail -f /dev/null"
+        ipv4_address: 192.168.17.31
+    command: /bin/bash -c "/bin/bash /root/startup.sh; tail -f /dev/null"
 
   db_server_2:
     build: .
     environment: 
       - SERVER_ID=2
-      - SERVER_IP=192.168.17.30
+      - SERVER_IP=192.168.17.32
       - SERVER_REPLICATION_PORT=33061
       - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
-      - IP_WHITELIST="192.168.17.29, 192.168.17.30, 192.168.17.31"
-      - GROUP_SEEDS="192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"
+      - IP_WHITELIST="192.168.17.31, 192.168.17.32, 192.168.17.33"
+      - GROUP_SEEDS="192.168.17.31:33061, 192.168.17.32:33061, 192.168.17.33:33061"
     volumes: 
       - db_server2:/var/lib/mysql
       - ./log/2:/var/log/mysql
@@ -36,18 +36,18 @@ services:
       - db_server_1
     networks: 
       bdt_network:
-        ipv4_address: 192.168.17.30
-    command: /bin/bash -c "/bin/bash /root/startup.sh; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; tail -f /dev/null"
+        ipv4_address: 192.168.17.32
+    command: /bin/bash -c "/bin/bash /root/startup.sh; tail -f /dev/null"
     
   db_server_3:
     build: .
     environment: 
       - SERVER_ID=3
-      - SERVER_IP=192.168.17.31
+      - SERVER_IP=192.168.17.33
       - SERVER_REPLICATION_PORT=33061
       - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
-      - IP_WHITELIST="192.168.17.29, 192.168.17.30, 192.168.17.31"
-      - GROUP_SEEDS="192.168.17.29:33061, 192.168.17.30:33061, 192.168.17.31:33061"
+      - IP_WHITELIST="192.168.17.31, 192.168.17.32, 192.168.17.33"
+      - GROUP_SEEDS="192.168.17.31:33061, 192.168.17.32:33061, 192.168.17.33:33061"
     volumes: 
       - db_server3:/var/lib/mysql
       - ./log/3:/var/log/mysql
@@ -56,8 +56,8 @@ services:
       - db_server_1
     networks: 
       bdt_network:
-        ipv4_address: 192.168.17.31
-    command: /bin/bash -c "/bin/bash /root/startup.sh; chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; tail -f /dev/null"
+        ipv4_address: 192.168.17.33
+    command: /bin/bash -c "/bin/bash /root/startup.sh; tail -f /dev/null"
 
 volumes: 
   db_server1: {}
