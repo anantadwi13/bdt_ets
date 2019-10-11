@@ -17,6 +17,10 @@ services:
     depends_on: 
       - db_server_1
       - db_load_balancer
+    deploy:
+      resources:
+        limits:
+          memory: 1G
     networks: 
       bdt_network:
         ipv4_address: 192.168.17.29
@@ -29,6 +33,10 @@ services:
     volumes: 
       - ./db_load_balancer/log:/var/log/haproxy
       - ./db_load_balancer/root:/root
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     networks: 
       bdt_network:
         ipv4_address: 192.168.17.30
@@ -46,6 +54,10 @@ services:
       - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
       - IP_WHITELIST="192.168.17.31, 192.168.17.32, 192.168.17.33"
       - GROUP_SEEDS="192.168.17.31:33061, 192.168.17.32:33061, 192.168.17.33:33061"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     volumes: 
       - db_server1:/var/lib/mysql
       - ./db_server/log/1:/var/log/mysql
@@ -64,6 +76,10 @@ services:
       - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
       - IP_WHITELIST="192.168.17.31, 192.168.17.32, 192.168.17.33"
       - GROUP_SEEDS="192.168.17.31:33061, 192.168.17.32:33061, 192.168.17.33:33061"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     volumes: 
       - db_server2:/var/lib/mysql
       - ./db_server/log/2:/var/log/mysql
@@ -84,6 +100,10 @@ services:
       - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
       - IP_WHITELIST="192.168.17.31, 192.168.17.32, 192.168.17.33"
       - GROUP_SEEDS="192.168.17.31:33061, 192.168.17.32:33061, 192.168.17.33:33061"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     volumes: 
       - db_server3:/var/lib/mysql
       - ./db_server/log/3:/var/log/mysql
