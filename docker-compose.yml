@@ -1,7 +1,7 @@
 version: '3.3'
 
 services: 
-  db_web_server:
+  web_server:
     build: ./web_server
     environment: 
       - APP_NAME="Reservasi"
@@ -11,6 +11,7 @@ services:
       - DB_USERNAME=haproxy_root
       - DB_PASSWORD=admin
     volumes: 
+      - web_server:/var/www
       - ./web_server/log:/var/log/apache2
       - ./web_server/root:/root
     depends_on: 
@@ -95,6 +96,7 @@ services:
     command: /bin/bash -c "/bin/bash /root/startup.sh; tail -f /dev/null"
 
 volumes: 
+  web_server: {}
   db_server1: {}
   db_server2: {}
   db_server3: {}

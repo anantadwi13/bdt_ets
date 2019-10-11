@@ -13,7 +13,7 @@ RUN echo "tzdata tzdata/Areas select Asia" > /tmp/preseed.txt; \
 RUN apt install -y htop nano curl libaio1\
     libmecab2 libnuma1 perl psmisc net-tools uuid-runtime 
     
-RUN apt install -y git apache2 composer php php7.2-dom php7.2-mbstring \
+RUN apt install -y git apache2 mysql-client composer php php7.2-dom php7.2-mbstring \
     php7.2-gd php7.2-zip php7.2-bcmath php7.2-json php7.2-mysql php7.2-pdo php7.2-intl
 
 WORKDIR /var/www
@@ -32,5 +32,3 @@ RUN cp /tmp/apache2.conf /etc/apache2/sites-available/000-default.conf &&\
     chmod -R 777 storage/* &&\
     a2enmod rewrite &&\
     php artisan storage:link
-
-RUN apt install -y mysql-client
