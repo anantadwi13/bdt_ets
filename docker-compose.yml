@@ -18,8 +18,8 @@ services:
       bdt_network:
         ipv4_address: 192.168.17.30
     ports: 
-      - "80:80"
       - "3306:3306"
+      - "9201:9201"
     command: /bin/bash -c "/bin/bash /root/startup.sh; tail -f /dev/null"
 
   db_server_1:
