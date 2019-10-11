@@ -1,14 +1,12 @@
-FROM ubuntu
+FROM ubuntu:16.04
 
 RUN apt update &&\
     apt upgrade -y
 
 RUN apt install -y htop nano curl libaio1\
-    libmecab2 libnuma1 perl psmisc net-tools
+    libmecab2 libnuma1 perl psmisc net-tools uuid-runtime
 
-COPY . /root/
+COPY ./script/script.sh /tmp/script.sh
+COPY ./script/sources.list /etc/apt/sources.list
 
-RUN cd /root/ &&\
-    /bin/bash script1.sh
-
-CMD /bin/bash /root/startup.sh && /bin/bash
+RUN /bin/bash /tmp/script.sh
