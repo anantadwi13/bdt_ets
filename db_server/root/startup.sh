@@ -29,7 +29,8 @@ sed -i "s/.*loose-group_replication_local_address.*/loose-group_replication_loca
 
 chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 
-#nohup mysqld_safe &
+rm -f /var/run/mysqld/mysqld.sock.lock
+
 service mysql restart
 
 if  [ ! -f "/var/lib/mysql/initialized" ]; then
