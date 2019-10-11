@@ -2,4 +2,4 @@
 
 cp /root/haproxy.cfg /etc/haproxy/haproxy.cfg
 
-service haproxy start
+service haproxy restart

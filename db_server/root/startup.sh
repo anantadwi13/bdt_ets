@@ -30,7 +30,7 @@ sed -i "s/.*loose-group_replication_local_address.*/loose-group_replication_loca
 chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 
 #nohup mysqld_safe &
-service mysql start
+service mysql restart
 
 if  [ ! -f "/var/lib/mysql/initialized" ]; then
     mysql -u root -padmin < /root/cluster_init.sql

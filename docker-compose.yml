@@ -1,17 +1,31 @@
 version: '3.3'
 
 services: 
+  db_web_server:
+    build: ./web_server
+    environment: 
+      - APP_NAME="Reservasi"
+      - DB_HOST=192.168.17.30
+      - DB_PORT=3306
+      - DB_DATABASE=reservasi
+      - DB_USERNAME=haproxy_root
+      - DB_PASSWORD=admin
+    volumes: 
+      - ./web_server/log:/var/log/apache2
+      - ./web_server/root:/root
+    depends_on: 
+      - db_server_1
+      - db_load_balancer
+    networks: 
+      bdt_network:
+        ipv4_address: 192.168.17.29
+    ports: 
+      - "80:80"
+    command: /bin/bash -c "/bin/bash /root/startup.sh; tail -f /dev/null"
+
   db_load_balancer:
     build: ./db_load_balancer
-    environment: 
-      - SERVER_ID=1
-      - SERVER_IP=192.168.17.30
-      - SERVER_REPLICATION_PORT=33061
-      - GROUP_NAME="d0e43142-3131-4673-82d4-7eef36586372"
-      - IP_WHITELIST="192.168.17.30, 192.168.17.32, 192.168.17.33"
-      - GROUP_SEEDS="192.168.17.30:33061, 192.168.17.32:33061, 192.168.17.33:33061"
     volumes: 
-      - db_server1:/var/lib/mysql
       - ./db_load_balancer/log:/var/log/haproxy
       - ./db_load_balancer/root:/root
     networks: 
