@@ -48,6 +48,7 @@ services:
   db_server_1:
     build: ./db_server
     environment: 
+      - SERVER_UUID=6d8c6f78-ecb8-11e9-b0c0-0242c0a8111f
       - SERVER_ID=1
       - SERVER_IP=192.168.17.31
       - SERVER_REPLICATION_PORT=33061
@@ -70,6 +71,7 @@ services:
   db_server_2:
     build: ./db_server
     environment: 
+      - SERVER_UUID=6f7c241d-ecb8-11e9-b049-0242c0a81120
       - SERVER_ID=2
       - SERVER_IP=192.168.17.32
       - SERVER_REPLICATION_PORT=33061
@@ -94,6 +96,7 @@ services:
   db_server_3:
     build: ./db_server
     environment: 
+      - SERVER_UUID=6f7ae0e7-ecb8-11e9-b064-0242c0a81121
       - SERVER_ID=3
       - SERVER_IP=192.168.17.33
       - SERVER_REPLICATION_PORT=33061
