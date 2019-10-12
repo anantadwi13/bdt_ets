@@ -10,3 +10,5 @@ COPY ./script/script.sh /tmp/script.sh
 COPY ./script/sources.list /etc/apt/sources.list
 
 RUN /bin/bash /tmp/script.sh
+
+RUN apt install -y netcat-traditional
