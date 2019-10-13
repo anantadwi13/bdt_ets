@@ -1,6 +1,9 @@
 
 # MySQL Group Replication
 
+## Architecture
+![architecture](docs/assets/Arsitektur.png)
+
 ## Tech Stack
 - Docker
 - MySQL 5.7
